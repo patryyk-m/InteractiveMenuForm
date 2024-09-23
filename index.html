@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+      <link rel="stylesheet" href="css/formstyling.css">
+</head>
+
+<body>
+
+<form  action= "showForm.html" method="get" autocomplete="on">
+
+
+    <fieldset>
+    <legend id="a"><h1>Contact Us</h1></legend>
+    <br>
+    <label for="name">Your Name:</label>
+        <br>
+	<input type="text" size="10" maxlength="40" id = "name" name ="name" autofocus required>
+    <br>
+        <br>
+
+    <label for="email">Email:</label>
+        <br>
+	<input type="email" size="10" maxlength="40" id = "email" name ="email" required>
+    <br>
+    <br>
+    <label for="phone">Phone:</label>
+        <br>
+	<input type="tel" placeholder="123-12-123" pattern="[0-9]{3}-[0-9]{2}-[0-3]{3}" id = "phone" name ="phone" required>
+    <br>
+    <small>Format: 123-45-678</small>
+    <br>    
+    <br>
+    <label for="time">Choose a delivery time:</label>
+        <br>
+	<input type="time" min="13:00" max="0:00" id = "time" name ="time" required>
+        <small>Opening times are 1pm to 12am</small>
+
+    <br>
+        <br>
+    <label for="payment">Choose payment method:</label>
+        <br>
+    <input type="radio" id="cash" name="payment" value="CASH">
+    <label for="cash">Cash</label><br>
+    <input type="radio" id="card" name="payment" value="CARD">
+    <label for="card">Debit Card</label><br>
+    <input type="radio" id="card2" name="payment" value="DEB-CARD">
+    <label for="card2">Credit Card</label><br>
+        
+        <br>
+        
+        
+    <label for="starter">Starters:</label>
+        <br>
+          <input type="checkbox" id="starter1" name="starter1" value="Starter1">
+  <label for="starter1"> Bacon Rings</label><br>
+  <input type="checkbox" id="starter2" name="starter2" value="Starter2">
+  <label for="starter2"> Prawn and Ginger Dumplings</label><br>
+  <input type="checkbox" id="starter3" name="starter3" value="Starter3">
+  <label for="starter3"> Blooming Onion</label><br><br>
+
+
+    <br>
+        <label for="main">Mains:</label>
+        <br>
+          <input type="checkbox" id="main1" name="main1" value="Main1">
+  <label for="main1"> Creamy Tomato Pasta</label><br>
+  <input type="checkbox" id="main2" name="main2" value="Main2">
+  <label for="main2"> Pot Roast</label><br>
+  <input type="checkbox" id="main3" name="main3" value="Main3">
+  <label for="main3"> Honey Orange Fish Fillets</label><br><br>
+
+
+    <br>
+        
+    <label for="dessert">Desserts:</label>
+        <br>
+          <input type="checkbox" id="dessert1" name="dessert1" value="Dessert1">
+  <label for="dessert1"> Chocolate Brownie</label><br>
+  <input type="checkbox" id="dessert2" name="dessert2" value="Dessert2">
+  <label for="dessert2"> Cheesecake</label><br>
+  <input type="checkbox" id="dessert3" name="dessert3" value="Dessert3">
+  <label for="dessert3"> Apple Pie</label><br><br>
+
+
+    <br>
+    
+          <label for="message">Comments</label>
+        <br>
+  <textarea id="message" name="message" rows="5" cols="50"></textarea>
+
+    
+    <br>
+    <br>
+    
+    <label for="hear-us">How did you hear about us?</label>
+    <select id= "hear-us" name="hear-us">
+    <option value ="google">Google</option>/option>
+    <option value ="newspaper">Local Newspaper Ad</option>/option>
+    <option value ="friend">Friend</option>/option>
+    <option value ="other">Other</option>/option>
+        </select>
+        <br>
+
+    <label for="newsletter">Newsletter:</label> 
+    <input type="checkbox" id="newsletter" name="newsletter"> 
+    <span style="color:red">* Ensure this box is checked if you would like to receive latest offers.</span>
+    <br>
+        <br>
+
+
+
+    <div class = "buttons">
+		<input type="submit" name = "submit" id = "submit" value="Send message">
+	<!--	<input type="reset" value="Reset">-->
+	</div>
+
+</fieldset>
+</form>
+
+</body>
+</html>
